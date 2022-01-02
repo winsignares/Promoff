@@ -1,12 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 import Splashscreen from './Components/Splashscreen';
 
 export default function App() {
   return (
-    <Splashscreen6>
-      
-    </Splashscreen6>
+   <SafeAreaProvider>
+     <Splashscreen>
+       
+     </Splashscreen>
+   </SafeAreaProvider>
   );
 }
 
